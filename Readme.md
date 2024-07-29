@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Колоярская](https://up.htmlacademy.ru/htmlcss-individual/2/user/2517653).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
