@@ -2,6 +2,7 @@
 
 * Студент: [Екатерина Колоярская](https://up.htmlacademy.ru/htmlcss-individual/2/user/2517653).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Cайт: [Проект Седона](https://ekaterinakoloyarskaya.github.io/2517653-sedona-2/)
 
 ---
 
