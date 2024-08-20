@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -30,7 +31,9 @@
               <span class="visually-hidden">Поиск</span>
             </a>
           <li class="nav-user-item">
-            <a class="nav-link" href="#">Количество отелей в избранном</a>
+            <a class="nav-link" href="#">
+              <span class="visually-hidden">Количество отелей в избранном</span>
+            </a>
             <span class="likes-number">12</span>
           </li>
           <li class="nav-user-item">
@@ -41,6 +44,7 @@
     </header>
 
     <main class="main-inner" data-test="main">
+      <div class="form-filter">
         <h1 class="hostels-title">Гостиницы Седоны</h1>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -54,6 +58,7 @@
             </li>
           </ul>
         </nav>
+      </div>
 
         <section class="filters-hostels" data-test="filter">
           <h2 class="visually-hidden">Настройка фильтров гостиниц</h2>
@@ -104,6 +109,7 @@
             <button class="button" type="reset">Сбросить</button>
           </form>
 
+          <section class="catalog-hotels" data-test="catalog">
       <header class="header-sort" data-test="header">
         <h2 class="amount-pages-title">Найдено гостиниц:
           <span class="amount-pages">38</span>
@@ -118,24 +124,23 @@
 
         <ul class="view-page-list" aria-label="Вид отображения страницы">
           <li class="view-page">
-            <a class="visually-hidden view-page-selected" href="#">
+            <a class="view-page-link view-page-catalog" href="#">
               <span class="visually-hidden">Каталог</span>
             </a>
           </li>
           <li class="view-page">
-            <a class="visually-hidden" href="#">
+            <a class="view-page-link view-page-large" href="#">
               <span class="visually-hidden">Список крупный</span>
             </a>
           </li>
           <li class="view-page">
-            <a class="visually-hidden" href="#">
+            <a class="view-page-link view-page-small" href="#">
               <span class="visually-hidden">Список мелкий</span>
             </a>
           </li>
         </ul>
       </header>
 
-      <section class="catalog-hotels" data-test="catalog">
         <ul class="type-hotel-list">
           <li class="type-hotel-item">
             <a class="type-image-link" href="#" tabindex="-1">
@@ -254,13 +259,19 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
         <li class="social-item">
-          <a class="visually-hidden" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="social-item-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social-item">
-          <a class="visually-hidden" href="https://t.me/htmlacademy">Телеграм</a>
+          <a class="social-item-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
         <li class="social-item">
-          <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+          <a class="social-item-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
         </li>
       </ul>
     </section>
