@@ -14,13 +14,35 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  background-color: #e6f6de;
+  background-color: #e77676;
   color: #333333;
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.page-conteiner {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -39,9 +61,26 @@ body {
   text-decoration: none;
 }
 
+.nav {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  width: 492px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-user-list {
+  width: 312px;
+  margin-left: auto;
+}
+
+
 .nav-link {
   color: #000000;
-  ;
 }
 
 .nav-item {
@@ -76,21 +115,47 @@ body {
   text-transform: uppercase;
 }
 
+
+
 .welcome {
   background-image: url("../images/background/background-bow.svg"), url("../images/background/background.jpg");
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
   background-color: rgb(11, 129, 192);
 }
+
+.welcome-img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 .advantages-title {
   font-style: 30px;
   font-weight: 700;
+  line-height: 36px;
   color: #000000;
   text-transform: uppercase;
 }
 
 .reasons {
   font-style: 22px;
+  line-height: 26px;
+}
+
+.advantages-title-reasons {
+  line-height: 28px;
+}
+
+.advantages-description {
+  line-height: 21px;
+}
+
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list li {
@@ -100,11 +165,12 @@ body {
 .advantages-title {
   font-size: 24px;
   font-weight: 700;
+  line-height: 36px;
   color: #000000;
 }
 
 .advantages-item-accent {
-  background: #82B3D3;
+  background-color: #82B3D3;
   color: #FFFFFF;
 }
 
@@ -119,10 +185,19 @@ body {
   color: #FFFFFF;
 }
 
-
 .services-reasons {
   font-size: 22px;
+  line-height: 26px;
 }
+
+.services-title-reasons {
+  line-height: 28px;
+}
+
+.services-description {
+  line-height: 21px;
+}
+
 
 .advantages-item-lighter {
   background: rgba(131, 179, 211, 0.12);
@@ -130,6 +205,17 @@ body {
 
 .advantages-item-light {
   background: rgba(131, 179, 211, 0.2);
+}
+
+.services-item {
+width: 400px;
+height: 385px;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .services-list li {
@@ -150,6 +236,7 @@ body {
 .search-title {
   font-size: 30px;
   font-weight: 700;
+  line-height: 36px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -161,18 +248,22 @@ body {
 .subscribe {
   background-image: url("../images/background/subscribe.jpg");
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 414.86px;
 }
 
 
 .subscribe-title {
   font-size: 30px;
   font-weight: 700;
+  line-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
 .subscribe-info {
   font-size: 22px;
+  line-height: 26px;
   color: #FFFFFF;
 }
 
@@ -186,9 +277,25 @@ body {
   border-style: none;
 }
 
-.footer-main a {
+.footer-page {
+  display: flex;
+}
+
+.footer-page a {
   color: #000000;
   text-decoration: none;
+}
+
+.social-list {
+  width: 150px;
+  margin-left: 70px;
+}
+
+.contacts {
+  line-height: 40px;
+  width: 720px;
+  margin: auto;
+  text-align: center;
 }
 
 .social-list li {
@@ -198,9 +305,16 @@ body {
 .contacts-phone {
   font-style: normal;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
 }
+
+.logo-academy {
+  margin-right: 70px;
+}
+
+
+
 
 /* catalog */
 
@@ -208,6 +322,17 @@ body {
   color: #FFFFFF;
   background-image: url("../images/background/background-inner.jpg");
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 412px;
+}
+
+.filter-form {
+  display: flex;
+  padding: 0;
+}
+
+.filter-group {
+  border: none;
 }
 
 .hostels-title {
@@ -310,4 +435,15 @@ body {
 
 .pagination-link-next {
   color: #000000;
+}
+
+.subscribe-title-secondary {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.subscribe-info-secondary {
+  font-size: 22px;
+  color: #333333;
 }

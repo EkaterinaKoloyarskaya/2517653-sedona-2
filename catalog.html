@@ -8,40 +8,45 @@
   </head>
 
   <body>
-    <header class="header-main" data-test="header">
-      <a class="logo" href="index.html" aria-current="page">
-        <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта города Седона">
-      </a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link nav-link-current" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О Седоне</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
+    <div class="page-conteiner">
+      <header class="header-main" data-test="header">
+        <a class="logo" href="index.html" aria-current="page">
+          <img class="logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта города Седона">
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link nav-link-current" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О Седоне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
 
-        <ul class="nav nav-user">
-          <li class="nav-item nav-user-item">
-            <a class="nav-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          <li class="nav-item nav-user-item">
-            <a class="nav-link" href="#">Количество отелей в избранном</a>
-            <span class="likes-number">12</span>
-          </li>
-          <li class="nav-item nav-user-item">
-            <a class="nav-link button" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          <ul class="nav-list nav-user-list">
+            <li class="nav-item nav-user-item">
+              <a class="nav-user-link nav-user-serch" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="nav-item nav-user-item">
+              <a class="nav-link nav-user-link nav-user-favorite" href="#">
+                <span class="visually-hidden">Количество отелей в избранном</span>
+                <span class="likes-number">12</span>
+              </a>
+            </li>
+            <li class="nav-item nav-user-item">
+              <a class="nav-link button button-shadow" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="main-inner" data-test="main">
+
+    <main class="main" data-test="main">
       <div class="form-filter">
         <h1 class="hostels-title">Гостиницы Седоны</h1>
         <nav class="navigation">
@@ -246,8 +251,8 @@
       </section>
 
       <section class="subscribe-secondary" data-test="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscribe-title-secondary">Подпишитесь на рассылку</h2>
+        <p class="subscribe-info-secondary">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Введите ваш e-mail</label>
           <input class="enter-email" type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
@@ -257,7 +262,7 @@
       </section>
     </main>
 
-    <footer class="footer-main" data-test="footer">
+    <footer class="footer-page" data-test="footer">
       <section class="contacts-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
@@ -291,6 +296,7 @@
         </a>
       </section>
     </footer>
+  </div>
   </body>
 
 </html>
